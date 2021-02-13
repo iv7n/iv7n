@@ -1,0 +1,38 @@
+{
+  "name": "iv7n",
+  "private": true,
+  "version": "0.0.0-alpha.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js -t",
+    "preinstall": "node ./scripts/checkYarn.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "yeojongki <yeojongki@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@microsoft/api-extractor": "^7.13.1",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "execa": "^5.0.0",
+    "lerna": "^3.22.1",
+    "minimist": "^1.2.5",
+    "rollup": "^2.38.5",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-scss": "^2.6.1",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.1.3"
+  }
+}

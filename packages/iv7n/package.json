@@ -1,0 +1,28 @@
+{
+  "name": "iv7n",
+  "version": "0.0.1-alpha.0",
+  "description": "> TODO: description",
+  "author": "yeojongki <yeojongki@foxmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/iv7n.cjs.js",
+  "module": "dist/iv7n.esm-bundler.js",
+  "types": "dist/iv7n.d.ts",
+  "buildOptions": {
+    "name": "Iv7n",
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@iv7n/request": "^0.0.1-alpha.0",
+    "@iv7n/utils": "^0.0.1-alpha.0"
+  }
+}
