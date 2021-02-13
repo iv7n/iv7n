@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"declaration": true,
+		"baseUrl": ".",
+		"rootDir": ".",
+		"outDir": "dist",
+    "paths": {
+      "@iv7n/*": ["packages/*/src"],
+      "iv7n": ["packages/iv7n/src"]
+    }
+	},
+	"exclude": ["node_modules"]
+}
