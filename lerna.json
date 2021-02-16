@@ -7,6 +7,7 @@
   "version": "0.0.2-alpha.0",
   "command": {
     "publish": {
+      "registry": "https://registry.npmjs.org/",
       "ignoreChanges": [
         "ignored-file",
         "*.md"
