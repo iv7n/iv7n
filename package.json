@@ -11,7 +11,7 @@
     "url": "git+https://github.com/iv7n/iv7n.git"
   },
   "scripts": {
-    "format":"prettier --write --parser typescript  \"packages/**/*.(t|j)s?(x)\"",
+    "format": "prettier --write --parser typescript  \"packages/**/*.(t|j)s?(x)\"",
     "cz": "cz",
     "init-cz": "commitizen init cz-conventional-changelog --yarn --dev --exact --force",
     "dev": "node scripts/dev.js",
