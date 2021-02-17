@@ -8,6 +8,7 @@ const skipTests = args.skipTests
 const skipBuild = args.skipBuild
 const fromPackage = args.fromPackage
 const fromGit = args.fromGit
+const prerelease = args.prerelease
 
 const bin = name => path.resolve(__dirname, '../node_modules/.bin/' + name)
 const run = (bin, args, opts = {}) =>
@@ -37,12 +38,16 @@ async function main() {
 
   // publish packages
   step('\nPublishing packages...')
-  await run('lerna', [
-    'publish',
-    '--no-push',
-    fromPackage ? '--from-package' : '',
-    fromGit ? '--from-git' : '',
-  ])
+  await run(
+    'lerna',
+    [
+      'publish',
+      prerelease ? '--canary' : '',
+      '--no-push',
+      fromPackage ? '--from-package' : '',
+      fromGit ? '--from-git' : '',
+    ].filter(Boolean)
+  )
 
   // update all package versions and inter-dependencies
   step('\nUpdating all package versions...')
