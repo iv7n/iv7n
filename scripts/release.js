@@ -57,8 +57,8 @@ async function main() {
   await run('yarn', ['changelog'])
 
   step('\nCommitting changes...')
-  await runIfNotDry('git', ['add', '-A'])
-  await runIfNotDry('git', ['commit', '-m', `chore(release): v${version}`])
+  await run('git', ['add', '-A'])
+  await run('git', ['commit', '-m', `chore(release): v${version}`])
 
   step(`v${version} is released 🎉`)
 }
