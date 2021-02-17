@@ -8,7 +8,6 @@ const skipTests = args.skipTests
 const skipBuild = args.skipBuild
 const fromPackage = args.fromPackage
 const fromGit = args.fromGit
-const prerelease = args.prerelease
 
 const bin = name => path.resolve(__dirname, '../node_modules/.bin/' + name)
 const run = (bin, args, opts = {}) =>
@@ -42,7 +41,6 @@ async function main() {
     'lerna',
     [
       'publish',
-      prerelease ? '--canary' : '',
       '--no-push',
       fromPackage ? '--from-package' : '',
       fromGit ? '--from-git' : '',
