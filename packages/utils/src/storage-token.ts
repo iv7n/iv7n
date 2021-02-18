@@ -33,7 +33,7 @@ export class StorageToken<T extends CurrentUser = CurrentUser> {
    * @param user - current user
    */
   checkIsLogin(user: T | undefined): boolean {
-    return Boolean((user && user.username) || this.getStorageRoles())
+    return Boolean(user && user.username)
   }
 
   /**
