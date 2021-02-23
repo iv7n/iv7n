@@ -42,7 +42,6 @@
     "cz-conventional-changelog": "3.3.0",
     "execa": "^5.0.0",
     "husky": "^5.0.9",
-    "lerna": "^3.22.1",
     "minimist": "^1.2.5",
     "prettier": "^2.2.1",
     "prettier-quick": "^0.0.5",
